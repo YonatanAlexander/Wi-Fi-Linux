@@ -29,7 +29,7 @@ wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/m
 Use this script is very easy, you can do it in several ways.
 <br/>
 
-###Execute the script directly:<br/>
+### Execute the script directly:<br/>
 
 If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>`
 For example:
@@ -39,7 +39,7 @@ For example:
 /Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password 
 ```
 
-###Creating an alias (Optional):<br/>
+### Creating an alias (Optional):<br/>
 
 You can create an alias to the Wi-Fi script in your shell's configuration file (e.g., `.bashrc`, `.zshrc`, etc.) and simplify the execution through command-line.
 For example, if you're using `zsh`, you can add something like the folowwing to your `.zshrc`: `alias wifi="/Path/to/script/ wifi"`
