@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+
+import sys
+import subprocess
+
+GOOD_ARGS = ("on", "off", "list", "status", "connect", "disconnect", "-h", "--help")
+
+def run_command(command) -> bytes:
+    ''' Run a command and return the standar output (stdout). 
+        If an error occurs during the process, print the standar error (stderr)
+    
+        Args:
+            command (str): The command string
+        
+        Returns:
+            byte: The stdout of the command  
+    '''
+    try:
+        return subprocess.run(command, shell=True, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
+    except subprocess.CalledProcessError as e:
+        print(e.stderr)
+
+def show_main_menu():
+    print(
+        """
+        Wi-fi management script:
+        
+        It is recommended to use it if you want to simplify the management of your device's Wi-Fi for 
+        basic things like turning Wi-Fi on/off, connecting/disconnecting from a network, etc. 
+        Internally it uses the nmcli tool.
+
+        Usage:
+        
+            wifi -h / --help .......................... Show the main menu (this menu) for help
+            wifi status ............................... Show the general Wi-Fi status
+            wifi on ................................... Enable Wi-Fi
+            wifi off .................................. Disable Wi-Fi
+            wifi list ................................. List all available networks
+            wifi connect <SSID> <Password> ............ Connect to a Network using it SSID and the given password
+            
+                Example:
+                    wifi connect MyNetwork MyPassword . Connect to a MyNetwork using MyPassword
+            
+            wifi disconnect ........................... Disconnect from current network
+            
+        """
+    )
+
+def main():
+    args = sys.argv[1:] # Discard the first token: 'wifi'
+    
+    # Validate the number of arguments
+    if len(args) != 1 and len(args) != 3: 
+        show_main_menu()
+        sys.exit(1)
+    
+    # Validate that the first argument is valid
+    if not args[0] in GOOD_ARGS:
+        print(f"Unknown option: '{args[0]}'")
+        show_main_menu()
+        sys.exit(1)
+        
+    if len(args) == 1: # if len == 1, so the arg should be 'on', 'off, 'status', 'list', "disconnect", "-h" or "--help"
+        
+        if args[0] == "-h" or args[0] == "--help":
+            show_main_menu()
+            sys.exit(0)
+        
+        elif args[0] == GOOD_ARGS[2]: # list
+            print(run_command("nmcli device wifi list"))
+            
+        elif args[0] == GOOD_ARGS[3]: # status
+            print(run_command("nmcli general status"))
+        
+        elif args[0] == GOOD_ARGS[5]: # disconnect
+            devices_status = run_command("nmcli -t -f DEVICE,TYPE,STATE device")
+            
+            # Search the wifi device name to disconnect it
+            for line in devices_status.splitlines():
+                device, device_type, status = line.split(":")
+                if (device_type == "wifi" and status == "connected"): # Disconnect the current Network only if the Wi-Fi device is enabled
+                    run_command(f"nmcli device disconnect {device}")
+
+        else: # if args[0] == "off" or args[0] == "on"
+            run_command(f"nmcli radio wifi {args[0]}")
+
+    else:
+        run_command(f"nmcli device wifi connect {args[1]} password {args[2]}") # args[1] is the Network SSID and args[2] is the Password
+
+if __name__ == "__main__":
+    main()
