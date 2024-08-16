@@ -27,7 +27,7 @@ wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/m
 ## Usage
 
 Use this script is very easy, you can do it in several ways
-1. Execute the script directly:
+1. Execute the script directly:<br/>
 If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>`
 For example:
 ```
