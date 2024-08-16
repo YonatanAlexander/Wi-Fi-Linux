@@ -26,6 +26,10 @@ curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/ma
 ```
 wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/wifi
 ```
+Or clone this repo:
+```
+git clone https://github.com/YonatanAlexander/Wi-Fi-Linux-Script.git
+```
 
 ## Usage
 
