@@ -31,6 +31,11 @@ Or clone this repo:
 git clone https://github.com/YonatanAlexander/Wi-Fi-Linux-Script.git
 ```
 
+Finally, give the script execute permissions:
+```
+chmod +x /Path/to/script/wifi
+```
+
 ## Usage
 
 If you already downloaded the script, so you can use it directly via command-line, something like this: `/Path/to/script/wifi <options>` <br/>
