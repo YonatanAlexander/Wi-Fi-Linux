@@ -1,7 +1,7 @@
 # Wi-Fi-Linux-Script
 
 This is a very basic python script designed to simplify the Wi-Fi management in Linux through command-line operations. 
-Internally it uses the nmcli tool, allowing basic operations like the following.
+Internally it uses the `nmcli` tool, allowing basic operations like the following.
 
 ## Features
 
