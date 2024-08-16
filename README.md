@@ -42,6 +42,13 @@ For example:
 ### Creating an alias (Optional):<br/>
 
 You can create an alias to the Wi-Fi script in your shell's configuration file (e.g., `.bashrc`, `.zshrc`, etc.) and simplify the execution through command-line.
-For example, if you're using `zsh`, you can add something like the folowwing to your `.zshrc`: `alias wifi="/Path/to/script/ wifi"`
+For example, if you're using `zsh`, you can add something like the folowwing to your `.zshrc`: 
+```
+alias wifi="/Path/to/script/ wifi"
+```
+Save and exit the editor, so aply the changes:
+```
+source ~/.zshrc
+```
 
 
