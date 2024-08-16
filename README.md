@@ -26,17 +26,16 @@ wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/m
 
 ## Usage
 
-Use this script is very simple, you can do it in several ways
-- Execute the script directly
+Use this script is very easy, you can do it in several ways
+1. Execute the script directly:
 If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>`
 For example:
-```bash
-~/Path/to/script/wifi list
 ```
-or
-```bash
-~/Path/to/script/wifi connect <Network_SSID> <Password>
+~/Path/to/script/wifi on                                    # Enable Wi-Fi
+~/Path/to/script/wifi list                                  # List available networks
+~/Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password 
 ```
+
 
 
 
