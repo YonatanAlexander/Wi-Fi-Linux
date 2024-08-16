@@ -26,16 +26,22 @@ wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/m
 
 ## Usage
 
-Use this script is very easy, you can do it in several ways
+Use this script is very easy, you can do it in several ways.
+<br/>
+
 1. Execute the script directly:<br/>
+
 If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>`
 For example:
 ```
-~/Path/to/script/wifi on                                    # Enable Wi-Fi
-~/Path/to/script/wifi list                                  # List available networks
-~/Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password 
+/Path/to/script/wifi on                                    # Enable Wi-Fi
+/Path/to/script/wifi list                                  # List available networks
+/Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password 
 ```
 
+2. Creating an alias (Optional):<br/>
 
+You can create an alias to the Wi-Fi script in your shell's configuration file (e.g., `.bashrc`, `.zshrc`, etc.) and simplify the execution through command-line.
+For example, if you're using `zsh`, you can add something like the folowwing to your `.zshrc`: `alias wifi="/Path/to/script/ wifi"`
 
 
