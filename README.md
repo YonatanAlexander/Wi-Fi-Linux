@@ -11,7 +11,8 @@ Internally it uses the nmcli tool, allowing basic operations like the following.
 - List available networks
 
 ## Requirements
-- `nmcli`: NetworkManager command-line tool. You can install it via package manager: `sudo apt-get install nmcli`
+
+`nmcli`: NetworkManager command-line tool. You can install it via package manager: `sudo apt-get install nmcli`
 
 ## Installation
 
@@ -26,21 +27,21 @@ curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/ma
 wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/wifi
 ```
 
-## Configure
+## Usage
 
-To configure the script for the execution, you have the following options.
-
-### Execute the script directly (Easiest)
-
-If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>` <br/>
+If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <options>` <br/>
 For example:
 ```
 /Path/to/script/wifi on                                    # Enable Wi-Fi
 /Path/to/script/wifi list                                  # List available networks
-/Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password 
+/Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password
 ```
 
-### Creating an alias (Optional)
+## Configure (Optional)
+
+You can also make additional configures to simplify the use of the script by using one of the following options.
+
+### Creating an alias
 
 You can create an alias to the Wi-Fi script in your shell's configuration file (e.g., `.bashrc`, `.zshrc`, etc.) and simplify the execution through command-line.
 For example, if you're using `zsh`, so you can add something like the following to your `.zshrc`: 
@@ -51,9 +52,12 @@ Apply the changes:
 ```
 source ~/.zshrc
 ```
+So, now you can execute the script simply typing `wifi <optons>`
 
-### Installing the Script to a System-Wide Location (Optional)
-For convenience, you can move or copy the script to `~/.local/bin` so that it can be executed from any location in your terminal.
+### Installing the Script to a System-Wide Location
+
+For convenience, you can move or copy the script to `~/.local/bin` so that it can be executed from any location in your terminal. <br/>
+For that.
 ```
 cp /path/to/script/wifi ~/.local/bin/wifi
 ```
@@ -65,7 +69,8 @@ cp /path/to/script/wifi ~/.local/bin/wifi
 Ensure `~/.local/bin` is in your `PATH`. <br/>
 For it, add the following line to your shell's configuration file: `export PATH="$HOME/.local/bin:$PATH"` and apply the changes:
 
+So, now you can execute the script simply typing `wifi <options>`
+
 ## Help
 
-Anyways you can execute the script with the `-h` or `--help` option for see the main menu
-
+Anyways you can execute `wifi -h` or `wifi --help` to see the help
