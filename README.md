@@ -16,12 +16,12 @@ Internally it uses the nmcli tool, allowing basic operations like the following.
 Download the wifi script. You can do it using one of the folowing commands:
 - Using `curl`
 ```bash
-curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/wifi
 ```
 
 - Using `wget`
 ```bash
-wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/wifi
 ```
 
 ## Configure
