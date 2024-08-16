@@ -24,12 +24,11 @@ curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linu
 wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
 ```
 
-## Usage
+## Configure
 
-Use this script is very easy, you can do it in several ways.
-<br/>
+To configure the script for the execution, you have several options.
 
-### Execute the script directly:<br/>
+### Execute the script directly
 
 If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>`
 For example:
@@ -39,16 +38,32 @@ For example:
 /Path/to/script/wifi connect <SSID>  <Password>            # Connect to a network using it SSID and the password 
 ```
 
-### Creating an alias (Optional):<br/>
+### Creating an alias (Optional)
 
 You can create an alias to the Wi-Fi script in your shell's configuration file (e.g., `.bashrc`, `.zshrc`, etc.) and simplify the execution through command-line.
 For example, if you're using `zsh`, you can add something like the folowwing to your `.zshrc`: 
 ```
-alias wifi="/Path/to/script/ wifi"
+alias wifi="/Path/to/script/wifi"
 ```
-Save and exit the editor, so aply the changes:
+Apply the changes:
 ```
 source ~/.zshrc
 ```
 
+### Installing the Script to a System-Wide Location (Optional)
+For convenience, you can move or copy the script to `~/.local/bin` so that it can be executed from any location in your terminal.
+```
+cp /path/to/script/wifi ~/.local/bin/wifi
+```
+or
+```
+cp /path/to/script/wifi ~/.local/bin/wifi
+```
+
+Ensure `~/.local/bin` is in your `PATH`. <br/>
+For it, add the following line to your shell's configuration file: `export PATH="$HOME/.local/bin:$PATH"` and apply the changes:
+
+## Help
+
+Anyways you can execute the script with the `-h` or `--help` option for see
 
