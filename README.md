@@ -33,7 +33,7 @@ git clone https://github.com/YonatanAlexander/Wi-Fi-Linux-Script.git
 
 ## Usage
 
-If you already downloaded the script, so you can use it directly vía command-line, something like this: `/Path/to/script/wifi <options>` <br/>
+If you already downloaded the script, so you can use it directly via command-line, something like this: `/Path/to/script/wifi <options>` <br/>
 For example:
 ```
 /Path/to/script/wifi on                                    # Enable Wi-Fi
@@ -48,7 +48,7 @@ You can also make additional configures to simplify the use of the script by usi
 ### Creating an alias
 
 You can create an alias to the Wi-Fi script in your shell's configuration file (e.g., `.bashrc`, `.zshrc`, etc.) and simplify the execution through command-line.
-For example, if you're using `zsh`, so you can add something like the following to your `.zshrc`: 
+For example, if you're using `zsh`, you can add the following to your `.zshrc`: 
 ```
 alias wifi="/Path/to/script/wifi"  # Create the 'wifi` alias for the script
 ```
@@ -56,7 +56,7 @@ Apply the changes:
 ```
 source ~/.zshrc
 ```
-So, now you can execute the script simply typing `wifi <options>`
+Now you can execute the script by simply typing `wifi <options>`
 
 ### Installing the Script to a System-Wide Location
 
@@ -80,7 +80,7 @@ And apply the changes:
 source ~/.yourShellConfigFile
 ```
 
-So, now you can execute the script simply typing `wifi <options>`
+Now you can execute the script by simply typing `wifi <options>`
 
 ## Help
 
