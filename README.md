@@ -52,7 +52,7 @@ Apply the changes:
 ```
 source ~/.zshrc
 ```
-So, now you can execute the script simply typing `wifi <optons>`
+So, now you can execute the script simply typing `wifi <options>`
 
 ### Installing the Script to a System-Wide Location
 
