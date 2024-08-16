@@ -5,5 +5,8 @@
 
 ## Installation
 Download the wifi script. You can do it using one of the folowing commands:
-- `curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi`
-- `wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi`
+```bash
+curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+
+```bash
+wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
