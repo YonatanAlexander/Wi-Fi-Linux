@@ -7,6 +7,8 @@
 Download the wifi script. You can do it using one of the folowing commands:
 ```bash
 curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+```
 
 ```bash
 wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+```
