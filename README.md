@@ -15,13 +15,28 @@ Internally it uses the nmcli tool, allowing basic operations like the following.
 ## Installation
 Download the wifi script. You can do it using one of the folowing commands:
 - Using `curl`
-```bash curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi```
+```bash
+curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+```
 
 - Using `wget`
-```bash wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi ```
+```bash
+wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi
+```
 
 ## Usage
-1. Execute the script directly
+
+Use this script is very simple, you can do it in several ways
+- Execute the script directly
 If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <args>`
 For example:
-```bash ~/Path/to/script/wifi```
+```bash
+~/Path/to/script/wifi list
+```
+or
+```bash
+~/Path/to/script/wifi connect <Network_SSID> <Password>
+```
+
+
+
