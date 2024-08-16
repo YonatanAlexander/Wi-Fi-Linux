@@ -1,6 +1,9 @@
 # Wi-Fi-Linux-Script
 
 ## Requirements
-- `nmcli`: NetworkManager command-line tool. You can install it via package manager.
-  For example: `sudo apt install nmcli`
-- `cryptography`: Python package for cryptographic recipes and primitives. Install it using `pip install cryptography`.
+- `nmcli`: NetworkManager command-line tool. You can install it via package manager: `sudo apt-get install nmcli`
+
+## Installation
+Download the wifi script. You can do it using one of the folowing commands:
+- `curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi`
+- `wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-script-for-Linux/main/wifi`
