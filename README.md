@@ -72,7 +72,7 @@ cp /path/to/script/wifi ~/.local/bin/wifi
 ```
 or
 ```
-cp /path/to/script/wifi ~/.local/bin/wifi
+mv /path/to/script/wifi ~/.local/bin/wifi
 ```
 
 Ensure `~/.local/bin` is in your `PATH`. For that, add the following line to your shell's configuration file: 
