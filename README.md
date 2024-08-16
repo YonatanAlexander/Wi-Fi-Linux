@@ -66,8 +66,15 @@ or
 cp /path/to/script/wifi ~/.local/bin/wifi
 ```
 
-Ensure `~/.local/bin` is in your `PATH`. <br/>
-For it, add the following line to your shell's configuration file: `export PATH="$HOME/.local/bin:$PATH"` and apply the changes:
+Ensure `~/.local/bin` is in your `PATH`. For that, add the following line to your shell's configuration file: 
+```
+export PATH="$HOME/.local/bin:$PATH"
+```
+And apply the changes:
+
+```
+source ~/.yourShellConfigFile
+```
 
 So, now you can execute the script simply typing `wifi <options>`
 
