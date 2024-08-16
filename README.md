@@ -29,7 +29,7 @@ wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/
 
 ## Usage
 
-If you already downloaded the script, so you can use it directly vía command-line, something like this: `~/Path/to/script/wifi <options>` <br/>
+If you already downloaded the script, so you can use it directly vía command-line, something like this: `/Path/to/script/wifi <options>` <br/>
 For example:
 ```
 /Path/to/script/wifi on                                    # Enable Wi-Fi
