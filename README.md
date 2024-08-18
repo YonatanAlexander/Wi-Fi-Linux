@@ -19,16 +19,16 @@ Internally it uses the `nmcli` tool, allowing basic operations like the followin
 Download the Wi-Fi script. You can do it using one of the folowing commands:
 - Using `curl`:
 ```
-curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/wifi
+curl -O https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux/main/wifi
 ```
 
 - Using `wget`:
 ```
-wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux-Script/main/wifi
+wget https://raw.githubusercontent.com/YonatanAlexander/Wi-Fi-Linux/main/wifi
 ```
 Or clone this repo:
 ```
-git clone https://github.com/YonatanAlexander/Wi-Fi-Linux-Script.git
+git clone https://github.com/YonatanAlexander/Wi-Fi-Linux.git
 ```
 
 Finally, give the script execute permissions:
